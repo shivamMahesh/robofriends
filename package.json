@@ -1,6 +1,7 @@
 {
   "name": "robofriends",
   "version": "0.1.0",
+  "homepage": "https://shivammahesh.github.io/robofriends/"
   "private": true,
   "dependencies": {
     "react": "^16.4.2",
@@ -9,6 +10,8 @@
     "tachyons": "^4.11.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
